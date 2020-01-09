@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get 'home/index'
+  get 'topics/index'
+  get 'topics/show'
+  get 'topics/new'
+  get 'topics/edit'
+  resources :topics
 end
